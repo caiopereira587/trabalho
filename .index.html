@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VendaDiretaOnline</title>
+</head>
+<body style="background-image: url('https://img.freepik.com/fotos-gratis/parceiros-de-negocios-aperto-de-mao-global-corporativo-com-conceito-de-tecnologia_53876-102615.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696896000&semt=ais'); background-size: cover; font-family: Arial, sans-serif;">
+    <h1 style="text-align: center;">Bem-Vindo A VendaDiretaOnline</h1>
+
+    <nav style="text-align: center; margin-bottom: 20px;">
+        <a href="negocios 2.html">HOME</a> |
+        <a href="SOBRE%20NÓS.HTML">SOBRE</a> |
+        <a href="contato.html">CONTATO</a>
+    </nav>
+
+    <form action="processar_pedido.php" method="post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; width: 400px; margin: 0 auto;">
+        <label for="produto">Produto:</label>
+        <input type="text" id="produto" name="produto" required style="width: 100%; padding: 5px; margin-bottom: 10px;">
+
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="preco" step="0.01" required style="width: 100%; padding: 5px; margin-bottom: 10px;">
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" required style="width: 100%; padding: 5px; margin-bottom: 10px;">
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+            <option value="eletronicos">Eletrônicos</option>
+            <option value="vestuario">Vestuário</option>
+            <option value="alimentos">Alimentos</option>
+        </select>
+
+        <label for="cor">Cor:</label>
+        <input type="color" id="cor" name="cor" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+
+        <label for="tempo_entrega">Tempo de Entrega:</label>
+        <input type="time" id="tempo_entrega" name="tempo_entrega" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+
+        <label for="estoque">Em Estoque:</label>
+        <input type="range" id="estoque" name="estoque" min="0" max="100" step="1" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+
+        <label for="pagamento">Método de Pagamento:</label><br>
+        <input type="radio" id="cartao" name="pagamento" value="cartao">
+        <label for="cartao">Cartão de Crédito</label><br>
+        <input type="radio" id="boleto" name="pagamento" value="boleto">
+        <label for="boleto">Boleto Bancário</label><br>
+        <input type="radio" id="pix" name="pagamento" value="pix">
+        <label for="boleto">pix</label><br>
+
+        <label for="termos">Concordo com os Termos e Condições:</label>
+        <input type="checkbox" id="termos" name="termos" required style="margin-bottom: 10px;">
+
+        <button type="submit" style="width: 100%; padding: 10px; background-color: #0077b6; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Enviar Pedido</button>
+    </form>
+</body>
+<footer>
+    <div style="text-align: center; color: #000000;">&copy; 2023 Direitos Reservados a Caio Pereira</div>
+</footer>
+
+</html>
